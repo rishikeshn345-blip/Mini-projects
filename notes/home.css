@@ -1,0 +1,63 @@
+/* home.css — simple, uniform styles for the notes app */
+:root{
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #2b6cb0;
+  --muted: #6b7280;
+  --radius: 8px;
+  --max-width: 900px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  padding:20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:var(--bg);
+  color:#111827;
+  display:flex;
+  justify-content:center;
+}
+.container{
+  width:100%;
+  max-width:var(--max-width);
+  background:var(--card);
+  padding:22px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(14,20,30,0.06);
+}
+h1,h2,h3{color:var(--accent);margin-top:0}
+a{color:inherit;text-decoration:none}
+hr{border:0;border-top:1px solid #e6edf5;margin:16px 0}
+button,input[type="submit"],input[type="reset"]{
+  background:var(--accent);
+  color:#fff;
+  border:0;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+button:hover,input[type="submit"]:hover,input[type="reset"]:hover{opacity:0.95}
+.table-form{width:100%;margin-top:12px}
+table{width:100%;border-collapse:collapse}
+td{padding:6px 8px;vertical-align:middle}
+input[type="text"],input[type="password"],textarea{
+  width:100%;padding:8px;border:1px solid #e5e7eb;border-radius:6px;font-size:1rem
+}
+footer{margin-top:18px;font-size:0.9rem;color:var(--muted);text-align:center}
+
+/* small helper classes */
+.center{display:flex;gap:8px;align-items:center}
+.warning{background:#fff3cd;border-left:4px solid #ffeeba;padding:10px;border-radius:6px;color:#856404}
+
+/* server output area: ensure server-generated markup stacks and centers */
+.server-output{display:block;width:100%;margin-top:12px}
+.server-output h1,.server-output h2{margin:8px 0;color:var(--accent)}
+.server-output form{margin-top:8px}
+.server-output form button{background:var(--accent);border-radius:6px;padding:8px 12px}
+
+/* responsive */
+@media (max-width:480px){
+  body{padding:10px}
+  .container{padding:14px}
+}
