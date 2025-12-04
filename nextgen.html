@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Coaders</title>
+    <style>
+      .logo{
+        background-color: black;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 5%;
+      }
+      body{
+        background-color: black;
+      }
+      #about,h1{
+        color: whitesmoke;
+        font-family: 'Courier New', Courier, monospace;
+        
+      }
+      #about,p{
+        color: #1F51FF;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .but{
+        margin: 20px;
+        display: flex;
+       justify-content: center;
+       
+      }
+      .but,button{
+        color: wheat;
+        background-color: black;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        border: 2px solid black;
+      }
+      .but,button:active {
+        opacity: 0.5;
+        transition: opacity 0.2s;
+        }
+        #members{
+            margin: 10px;
+            border: 2px solid wheat;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #members,img{
+            margin-top: 10px;
+            border-radius: 50px;
+           
+        }
+        footer{
+            color: #1F51FF;
+        }
+        #notice {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #1F51FF;
+    border-radius: 10px;
+    background-color: #000814; /* dark blue-black */
+    color: #1F51FF;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+#notice h2 {
+    color: whitesmoke;
+}
+
+#notice ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+#notice li {
+    margin: 5px 0;
+    color: #1F51FF;
+    font-size: large;
+}
+#wall-of-fame {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+#wall-of-fame h1 {
+    color: #1F51FF;
+    margin-bottom: 20px;
+}
+
+.achievement {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #1F51FF;
+    border-radius: 8px;
+    background-color: #000814;
+    color: #1F51FF;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* Hover animation */
+.achievement:hover {
+    background-color: #001233;
+    transform: scale(1.02);
+    border-color: white;
+}
+
+.achievement img {
+    width: 100px;
+    max-height: 250px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #1F51FF;
+}
+
+.achievement h2 {
+    color: whitesmoke;
+    margin-bottom: 8px;
+}
+
+.achievement p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1F51FF;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" height="150px" width="150px"> 
+        </div>
+    </header>
+    <div class="but">
+        <button onclick="choose(1)">About Us</button>
+        <button onclick="choose(2)">Updates</button>
+        <button onclick="choose(3)">Wall of Fame</button>
+       <a href="https://forms.gle/drTBGmDoLrrsa5jr6"><button>Join Us</button></a>
+    </div>
+    <div id="about">
+        <h1>About Us:</h1>
+        <p>NextGen Coders is a young, innovative tech team dedicated to building smart digital solutions.<br>
+We combine creativity with clean, modern coding to bring ideas to life.<br>
+Driven by growth and collaboration, we craft technology built for the future.</p>
+    <div id="notice">
+    <h2>📢 Notice</h2>
+    <p>We are currently searching 2 members with strong knowledge of:</p>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>C Programming</li>
+        <li>Any one OOP language (Java, Python, C++, etc.)</li>
+    </ul>
+    <a href="https://forms.gle/drTBGmDoLrrsa5jr6"><button>Click here to Join Us</button></a>
+</div>
+     
+    <h1><center>Members</center></h1>
+        <div id="members">
+           
+            <div>
+                <img src="Rishi.jpg" height="100px" width="100px">
+            </div>
+            <h3>Rishikesh N</h3>
+            <h3>Backend Developer</h3>
+            <h3>C, C++, JAVA, JS, PHP, MYSQL, PYTHON, HTML, CSS</h3>
+            <h3>CSE</h3>
+            <h3>Student at GMU,Davangere</h3>
+        </div>
+         <div id="members">
+           
+            <div>
+                <img src="Vinay.png" height="100px" width="100px">
+            </div>
+            <h3>Vinay M</h3>
+            <h3>Frontend Developer</h3>
+            <h3>C, HTML, CSS</h3>
+            <h3>CSE</h3>
+            <h3>Student at GMU,Davangere</h3>
+        </div>
+    </div>
+    <div id="updates">
+         <div id="notice">
+    <h2>📢 Notice</h2>
+    <p>We are currently searching 2 members with strong knowledge of:</p>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>C Programming</li>
+        <li>Any one OOP language (Java, Python, C++, etc.)</li>
+    </ul>
+    <a href="https://forms.gle/drTBGmDoLrrsa5jr6"><button>Click here to Join Us</button></a>
+</div>
+     
+    </div>
+    <div id="wall">
+        <div id="wall-of-fame">
+    <h1>🏆 Wall of Fame</h1>
+
+    <!-- Card 1 -->
+    <div class="achievement">
+        <img src="mal.jpg" alt="Event Image">
+        <h2>National Level Hackthon</h2>
+        <p>
+            National level dev_ops hackthon at Malnad college of Engineering.It was a great experence to participate and learn. 1st round qualified top 10 among 150+ teams. This was a grand finale. Learned a lot with seiniors.
+        </p>
+        </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="achievement">
+        <img src="gmu.jpg" alt="Event Image">
+        <h2>Our first Hackthon</h2>
+        <p>
+            Our first hackthon at GM University Davangere. Great learning experence. Learned a lot with seiniors.
+        </p>
+        </p>
+    </div>
+
+    <div class="achievement">
+        <img src="" alt="Event Image">
+        <h2>Code Rush coading compition</h2>
+        <p>
+          Code rush coading compition at GMU Davangere. 8th place in round 1 and 20th place in round 2. Great experence learned a lot with seiniors.
+        </p>
+    </div>
+
+    
+
+    <!-- Add more events like this -->
+</div>
+
+    </div>
+    <footer>
+        <center>
+            <hr>
+            <h3>&copy; Developed by Rishikesh N </h3>           
+        </center>
+    </footer>
+    <script>
+        let update=document.getElementById('updates')
+        let wall=document.getElementById('wall')
+        let about=document.getElementById('about')
+        update.style.display="none"
+        wall.style.display="none"
+        function choose(num)
+        {
+            if(num===1)
+        {
+            about.style.display="block"
+            update.style.display="none"
+            wall.style.display="none"
+        }
+        if(num===2)
+        {
+             about.style.display="none"
+            update.style.display="block"
+            wall.style.display="none"
+        }
+        if(num===3)
+        {
+             about.style.display="none"
+            update.style.display="none"
+            wall.style.display="block"
+        }
+        }
+        
+    </script>
+</body>
+</html>
